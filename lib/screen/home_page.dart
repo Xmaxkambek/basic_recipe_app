@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
                 ),
                 ElevatedButton(
                     onPressed: () {
-                      print('Pressed');
+                      Navigator.pushNamed(context, 'menu');
                     },
                     child: Text('Get a meal'))
               ],
