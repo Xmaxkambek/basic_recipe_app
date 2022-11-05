@@ -17,7 +17,13 @@ class MenuPage extends StatelessWidget {
         ),
         title: Text('TITLE'),
       ),
-      body: Container(),
+      body: Container(
+        child: ListView.builder(
+            itemCount: 10,
+            itemBuilder: (context, index) {
+              return Text('TEXT');
+            }),
+      ),
     );
   }
 }
