@@ -28,6 +28,7 @@ class MenuPage extends StatelessWidget {
                   backgroundImage: AssetImage('images/${food[index]}.png'),
                 ),
                 title: Text(food[index]),
+                trailing: Icon(Icons.arrow_forward_ios),
               );
             },
             separatorBuilder: ((context, index) => Divider())),
