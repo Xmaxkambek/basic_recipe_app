@@ -4,7 +4,7 @@ import 'package:basic_recipe_app/screen/home_page.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: 'home',
+    initialRoute: 'menu',
     routes: {
       'home': (context) => HomePage(),
       'menu': (context) => MenuPage(),
