@@ -3,7 +3,9 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class MenuPage extends StatelessWidget {
-  const MenuPage({Key? key}) : super(key: key);
+  MenuPage({Key? key}) : super(key: key);
+
+  List food = ['Burger', 'Chicken', 'Lagmon', 'Pizza', 'Somsa'];
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +20,17 @@ class MenuPage extends StatelessWidget {
         title: Text('TITLE'),
       ),
       body: Container(
-        child: ListView.builder(
-            itemCount: 10,
+        child: ListView.separated(
+            itemCount: food.length,
             itemBuilder: (context, index) {
-              return Text('TEXT');
-            }),
+              return ListTile(
+                leading: CircleAvatar(
+                  backgroundImage: AssetImage('images/Somsa.png'),
+                ),
+                title: Text(food[index]),
+              );
+            },
+            separatorBuilder: ((context, index) => Divider())),
       ),
     );
   }
