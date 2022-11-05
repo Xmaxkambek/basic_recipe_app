@@ -29,6 +29,7 @@ class MenuPage extends StatelessWidget {
                 ),
                 title: Text(food[index]),
                 trailing: Icon(Icons.arrow_forward_ios),
+                subtitle: Text("⏱ 5 min ⚪️ coin  ♨️kcal"),
               );
             },
             separatorBuilder: ((context, index) => Divider())),
