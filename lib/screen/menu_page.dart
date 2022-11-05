@@ -8,6 +8,9 @@ class MenuPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('TITLE'),
+      ),
       body: Container(
         child: ElevatedButton(
           onPressed: () {
