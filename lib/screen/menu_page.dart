@@ -11,18 +11,13 @@ class MenuPage extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
-          onPressed: () {},
-        ),
-        title: Text('TITLE'),
-      ),
-      body: Container(
-        child: ElevatedButton(
           onPressed: () {
             Navigator.pushNamed(context, 'home');
           },
-          child: Text('BACK'),
         ),
+        title: Text('TITLE'),
       ),
+      body: Container(),
     );
   }
 }
