@@ -5,7 +5,7 @@ import 'package:flutter/src/widgets/framework.dart';
 class MenuPage extends StatelessWidget {
   MenuPage({Key? key}) : super(key: key);
 
-  List food = ['Burger', 'Chicken', 'Lagmon', 'Pizza', 'Somsa'];
+  List food = ['Lagmon', 'Burger', 'Chicken', 'Pizza', 'Somsa'];
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class MenuPage extends StatelessWidget {
             itemBuilder: (context, index) {
               return ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage('images/Somsa.png'),
+                  backgroundImage: AssetImage('images/${food[index]}.png'),
                 ),
                 title: Text(food[index]),
               );
