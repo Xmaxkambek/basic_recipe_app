@@ -1,4 +1,5 @@
 import 'package:basic_recipe_app/food.dart';
+import 'package:basic_recipe_app/widgets/food_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -30,14 +31,8 @@ class MenuPage extends StatelessWidget {
         child: ListView.separated(
             itemCount: food.length,
             itemBuilder: (context, index) {
-              return ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: AssetImage('images/${food[index].img}'),
-                ),
-                title: Text(food[index].name.toString()),
-                trailing: Icon(Icons.arrow_forward_ios),
-                subtitle: Text("⏱ 5 min ⚪️ coin  ♨️kcal"),
-              );
+              print(food[index].name);
+              return FoodWidget(food: food[index]);
             },
             separatorBuilder: ((context, index) => Divider())),
       ),
