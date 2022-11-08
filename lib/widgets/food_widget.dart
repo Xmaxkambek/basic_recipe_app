@@ -13,7 +13,11 @@ class FoodWidget extends StatelessWidget {
         backgroundImage: AssetImage('images/${food.img}'),
       ),
       title: Text(food.name.toString()),
-      trailing: Icon(Icons.arrow_forward_ios),
+      trailing: IconButton(
+          onPressed: (() {
+            Navigator.pushNamed(context, 'burger');
+          }),
+          icon: Icon(Icons.arrow_forward_ios_sharp)),
       subtitle: Text("⏱ 5 min ⚪️ coin  ♨️kcal"),
     );
   }
