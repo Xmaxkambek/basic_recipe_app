@@ -1,4 +1,5 @@
 import 'package:basic_recipe_app/food.dart';
+import 'package:basic_recipe_app/route/route.dart';
 import 'package:basic_recipe_app/widgets/food_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -22,7 +23,7 @@ class MenuPage extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.pushNamed(context, 'home');
+            Navigator.pushNamed(context, homePage);
           },
         ),
         title: Text('TITLE'),

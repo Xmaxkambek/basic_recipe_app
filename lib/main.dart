@@ -1,3 +1,4 @@
+import 'package:basic_recipe_app/route/route.dart';
 import 'package:basic_recipe_app/screen/burger_page.dart';
 import 'package:basic_recipe_app/screen/menu_page.dart';
 import 'package:flutter/material.dart';
@@ -7,8 +8,8 @@ void main() {
   runApp(MaterialApp(
     initialRoute: 'menu',
     routes: {
-      'home': (context) => HomePage(),
-      'menu': (context) => MenuPage(),
+      homePage: (context) => HomePage(),
+      menuPage: (context) => MenuPage(),
       'burger': (context) => BurgerPage(),
     },
   ));
