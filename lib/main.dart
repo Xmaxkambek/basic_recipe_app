@@ -6,7 +6,8 @@ import 'package:basic_recipe_app/screen/home_page.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: 'menu',
+    debugShowCheckedModeBanner: false,
+    initialRoute: menuPage,
     routes: {
       homePage: (context) => HomePage(),
       menuPage: (context) => MenuPage(),
